@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-=======
+
+
+
 # Coming soon
 ![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 ![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
@@ -25,5 +26,4 @@ Design: [Matrox coming soon](https://cdn.discordapp.com/attachments/648536139677
 - no AJAX (data sending)
 
 ## Authors
-[Rimantas](https://github.com/bemze)
->>>>>>> 58ad264a7aaa2110d755959dd767d1ee78120298
+[Mantas](https://github.com/bemze)
