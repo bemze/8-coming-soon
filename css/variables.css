@@ -1,4 +1,8 @@
 :root {
     --section-padding: 60px;
+    --hero-space: 20px;
+    --main-space: 20px;
     --main-color: #03A9F3;
+    --secondary-color: #Ea1E63;
+    --grey-color: #444;
 }
