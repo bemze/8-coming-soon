@@ -1,7 +1,12 @@
 import { isInputValidation } from "./isInputValidation.js";
 import { isValidSocialItem } from "./isValidSocialItem.js";
 
-
+/**
+ * Social nuorodu generavimas is pateiktu duomenu i nurodyta vieta DOM'e
+ * @param {string} selector Selectorius, kaip rasti norima vieta, kur bus statomas sugeneruotas kodas
+ * @param {Array} data Duomenu masyvas su objektais, kurie reprezenuoja social nuorodas
+ * @returns {boolean} Logikos vygdymo metu radus klaida grazinama 'false', jei teisingai - 'true'
+ */
 function renderSocials(selector, data) {
     if (!isInputValidation(selector, data)) {
         return false;
@@ -42,3 +47,5 @@ function renderSocials(selector, data) {
 }
 
 export { renderSocials }
+
+
