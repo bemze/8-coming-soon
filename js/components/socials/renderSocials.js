@@ -1,5 +1,5 @@
 import { isInputValidation } from "./isInputValidation.js";
-
+import { isValidSocialItem } from "./isValidSocialItem.js";
 
 
 function renderSocials(data) {
@@ -14,18 +14,10 @@ function renderSocials(data) {
 
     for (let i = 0; i < data.length; i++) {
         const item = data[i];
-
-        if (typeof item !== "object") {
+        if (!isValidSocialItem(item)) {
             continue;
         }
-        if (typeof item.link !== "string" ||
-        item.link === "" ) {
-            continue;
-        }
-        if (typeof item.icon !== "string" || 
-        item.link === "") {
-            continue;
-        }
+        
         HTML +=`<a href="${item.link}" target="_blank" class="fa fa-${item.icon}" aria-hidden="true"></a>`;
     }
         

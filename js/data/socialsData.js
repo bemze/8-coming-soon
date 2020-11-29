@@ -3,10 +3,6 @@ const socials = [
         icon: 'facebook',
         link: '#'
     },
-    544545,
-    "eeee",
-    true,
-    {},
     {
         icon: 'twitter',
         link: '#'
