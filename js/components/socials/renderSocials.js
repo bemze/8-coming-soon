@@ -2,14 +2,20 @@ import { isInputValidation } from "./isInputValidation.js";
 import { isValidSocialItem } from "./isValidSocialItem.js";
 
 
-function renderSocials(data) {
-    if (!isInputValidation(data)) {
+function renderSocials(selector, data) {
+    if (!isInputValidation(selector, data)) {
         return false;
     }
     
     //logic 
 
-    const socialsDOM = document.querySelector('footer > .row');
+    const socialsDOM = document.querySelector(selector);
+    
+    if (!socialsDOM) {
+        console.error('Error: nera turinio generavimo vietos');
+        return false;
+    }
+
     let HTML = '';
 
     for (let i = 0; i < data.length; i++) {

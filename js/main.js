@@ -1,7 +1,7 @@
 import {renderSocials} from "./components/socials/renderSocials.js";
 import {socials} from "./data/socialsData.js";
 
-renderSocials(socials);
+renderSocials('footer > .row', socials);
 
 
 
