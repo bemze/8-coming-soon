@@ -1,7 +1,10 @@
 import {renderSocials} from "./components/socials/renderSocials.js";
 import {socials} from "./data/socialsData.js";
+import { renderClock} from "./components/clock/renderClock.js";
 
 renderSocials('footer > .row', socials);
+
+renderClock('.clock');
 
 
 
