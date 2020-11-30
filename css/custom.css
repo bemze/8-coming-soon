@@ -107,6 +107,7 @@ footer {
         gap: 10px;
         padding: 10px 20px;
         border-bottom: 1px solid #fff;
+        position: relative;
     }
     footer .fa {
         display: inline-block;
@@ -152,6 +153,11 @@ footer {
     footer a {
         color: #fff;
         text-decoration: none;
+    }
+    footer .btn.circle {
+        position: absolute;
+        top: -24px;
+        right: -13px;
     }
 
 @media (max-width: 700px) {

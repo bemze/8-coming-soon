@@ -42,7 +42,7 @@ function renderSocials(selector, data) {
     
     // console.log(socialsDOM);
 
-    socialsDOM.innerHTML = HTML;
+    socialsDOM.innerHTML += HTML;
     return false;
 }
 
