@@ -123,6 +123,11 @@ footer {
             background-color: #fff;
             color: var(--main-color);
         }
+        footer .btn.circle {
+            position: absolute;
+            top: -24px;
+            right: -13px;
+        }
     footer .text-trio {
         display: inline-block;
         width: 100%;
@@ -154,11 +159,7 @@ footer {
         color: #fff;
         text-decoration: none;
     }
-    footer .btn.circle {
-        position: absolute;
-        top: -24px;
-        right: -13px;
-    }
+  
 
 @media (max-width: 700px) {
     footer .text-trio > .text {

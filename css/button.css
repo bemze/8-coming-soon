@@ -25,11 +25,23 @@
         background-color: var(--main-color);
         color: #fff;
     }
+        .btn.btn-main-color:hover {
+            background-color: var(--main-color);
+            color: #fff;
+        }
+        .btn.btn-main-color.btn-hover-invert.btn.btn-main-color:hover {
+            color: #fff;
+            background-color: var(--main-color);
+        }
     .btn.btn-secondary-color {
         background-color: var(--secondary-color);
         color: #fff;
     }
-    .btn.btn-secondary-color:hover {
-        background-color: var(--secondary-color);
-        color: #fff;
-    }
+        .btn.btn-secondary-color:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+        .btn.btn-secondary-color.btn-hover-invert.btn.btn-main-color:hover {
+            color: #fff;
+            background-color: var(--secondary-color);
+        }
