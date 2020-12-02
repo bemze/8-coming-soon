@@ -17,7 +17,6 @@ function countTimeDiff() {
     //suskaiciuojam laiko skirtuma
     const timeLeft = newYearMiliseconds - currentTimeMiliseconds;
     let secondsLeft = timeLeft / 1000;
-    
 
     //is skirtumo apskaiciuojame likusias dienas/valandas/minutes/sekundes
 
@@ -29,14 +28,15 @@ function countTimeDiff() {
     secondsLeft -= hours * 60 * 60;
 
     const minutes = Math.floor(secondsLeft / 60);
-    
 
     const seconds = Math.floor(secondsLeft - minutes * 60 );
     
-    
-    
-    
-    return (days, hours, minutes, seconds);
+    return {
+        days: days < 10 ? '0' + days : days,
+        hours: hours < 10 ? '0' + hours : hours,
+        minutes: minutes < 10 ? '0' + minutes : minutes,
+        seconds: seconds < 10 ? '0' + seconds : seconds,
+    };
 }
 
 export { countTimeDiff }
