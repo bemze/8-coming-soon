@@ -23,8 +23,10 @@ function renderAllProgressBars(data) {
         }
         renderProgressBar(bar.selector, bar.title, bar.value);
 
+        const renderAllProgressBars =document.querySelectorAll('.progress-bar');
+        
     }
-
+return true;
 }
 
 export { renderAllProgressBars }

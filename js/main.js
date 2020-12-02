@@ -14,6 +14,8 @@ renderSocials('footer > .row', socials);
 renderClock('.clock');
 
 
+// formVadidator('.hero .form');
+// formVadidator('.main .form');
 
 
 // renderProgressBar("WEB", 90);
