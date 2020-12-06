@@ -23,10 +23,32 @@ function renderAllProgressBars(data) {
         }
         renderProgressBar(bar.selector, bar.title, bar.value);
 
-        const renderAllProgressBars =document.querySelectorAll('.progress-bar');
-        
     }
+
+
+    const allProgressBars = document.querySelectorAll('.progress-bar');
+    
+    
+    addEventListener('scroll', () => {
+        const screenBottom = innerHeight + scrollY;
+        
+        for (let bar of allProgressBars) {
+            const barBottom = bar.offsetHeight + bar.offsetTop;
+            if (screenBottom >= barBottom) {
+                console.log("Pamaciau");
+                bar.classList.add('animate')
+              }
+        
+            }
+        // offsetHeight: 47
+        // offsetLeft: 117
+        // offsetTop: 995
+        // offsetWidth: 500
+
+    })
+
+
 return true;
-}
+    }
 
 export { renderAllProgressBars }
