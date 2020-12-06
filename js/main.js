@@ -5,7 +5,7 @@ import { renderClock} from "./components/clock/renderClock.js";
 import { renderAllProgressBars } from "./components/progress-bar/renderAllProgressBars.js";
 import { progressBarDate } from "./data/progressBarData.js";
 
-
+import { formValidator } from "./components/form-validator/formValidator.js";
 
 renderAllProgressBars(progressBarDate);
 
@@ -14,8 +14,8 @@ renderSocials('footer > .row', socials);
 renderClock('.clock');
 
 
-// formVadidator('.hero .form');
-// formVadidator('.main .form');
+formValidator('.hero .form');
+formValidator('.main .form');
 
 
 // renderProgressBar("WEB", 90);

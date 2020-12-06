@@ -35,11 +35,12 @@ function renderAllProgressBars(data) {
         for (let bar of allProgressBars) {
             const barBottom = bar.offsetHeight + bar.offsetTop;
             if (screenBottom >= barBottom) {
-                console.log("Pamaciau");
+                
                 bar.classList.add('animate')
               }
-        
+              
             }
+          
         // offsetHeight: 47
         // offsetLeft: 117
         // offsetTop: 995
