@@ -3,7 +3,17 @@
     width: 100%;
     color: #444;
 }
-    .form > input:not(.btn):not(.btn) {
+    .form > input:not(.btn) {
+        display: inline-block;
+        float: left;
+        width: 45%;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 36px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+    }
+    .form > .email {
         display: inline-block;
         float: left;
         width: 45%;
@@ -30,10 +40,14 @@
     }
 
 @media (max-width: 900px) {
-    .form > input:not(.btn) {
+    form > .form > .email {
+        display: inline-block;
+        float: left;
         width: 100%;
+        
     }
-        .form > input:not(.btn) + input:not(.btn) {
+    
+        body > .form > input + input {
             margin-left: 0;
         }
 } 

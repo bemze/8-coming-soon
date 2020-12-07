@@ -162,7 +162,7 @@ footer {
   
 
 @media (max-width: 700px) {
-    footer .text-trio > .text {
+    body > footer .text-trio > .text {
         width: 100%;
         padding: 0;
     }

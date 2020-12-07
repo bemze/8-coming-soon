@@ -15,7 +15,7 @@ renderClock('.clock');
 
 
 formValidator('.hero .form');
-formValidator('.main .form');
+formValidator('main .form');
 
 
 // renderProgressBar("WEB", 90);

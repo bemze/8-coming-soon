@@ -3,16 +3,16 @@ import { isValidEmail, isValidName, isValidText} from './validationRules.js';
 
 function formValidator(selector) {
     const formDOM = document.querySelector(selector);
-    const submitBtnDOM = formDOM.querySelector('input[type="submit"]'); //NERANDA .main .form
-
+    const submitBtnDOM = formDOM.querySelector('input[type="submit"]'); 
+    
     const allInputDOMs = formDOM.querySelectorAll('input:not([type="submit"])');
     const allTextareaDOMs = formDOM.querySelectorAll('textarea');
-
-    // console.log(submitBtnDOM);
+    
     const allElements = [...allInputDOMs, ...allTextareaDOMs];
-   
+    
     if (!submitBtnDOM) {
         console.log("ERROR: formoje nerastas submit elementas");
+        console.log(submitBtnDOM)
         return false;
     }
    
