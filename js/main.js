@@ -6,6 +6,7 @@ import { renderAllProgressBars } from "./components/progress-bar/renderAllProgre
 import { progressBarDate } from "./data/progressBarData.js";
 
 import { formValidator } from "./components/form-validator/formValidator.js";
+import { footerRender } from "./components/footer/footerRender.js";
 
 renderAllProgressBars(progressBarDate);
 
@@ -16,7 +17,7 @@ renderClock('.clock');
 
 formValidator('.hero .form');
 formValidator('main .form');
-
+footerRender('.text-trio > .text:nth-of-type(1)');
 
 // renderProgressBar("WEB", 90);
 // renderProgressBar('design', 70);
