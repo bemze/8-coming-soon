@@ -17,7 +17,7 @@ class Toast {
             this.DOM.classList.remove('error');
         }
         if (type === 'error') {
-            this.DOM.classList.add('erorr');
+            this.DOM.classList.add('error');
         }
     }
     hide() {
