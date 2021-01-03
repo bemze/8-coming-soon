@@ -18,13 +18,13 @@ renderClock('.clock');
 
 const toast = new Toast();
 toast.render();
-toast.show('error', 'Cia yra klaida!!!');
-toast.show('success', 'Puiku!!!');
-// toast.hide();
+// toast.show('success', 'Puiku!!!');
+// toast.show('error', 'Cia yra klaida!!!');
+// toast.hide('success', 'Puiku!!!');
 
 
-formValidator('.hero .form');
-formValidator('main .form');
+formValidator('.hero .form', toast);
+formValidator('main .form', toast);
 footerRender('.text-trio > .text:nth-of-type(1)');
 
 // renderProgressBar("WEB", 90);

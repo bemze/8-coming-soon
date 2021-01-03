@@ -12,10 +12,10 @@ function isValidName(name) {
     //turi buti tik ABC raide
     const abc = 'zxcvbnmasdfghjklqwertyuiop';
     for (let letter of name) {
-        console.log(letter);
+     
         if (!abc.includes(letter.toLowerCase())) {
             console.error("Error: varde panaudota netinkama raide");
-            return `Error: varde panaudota netinkama raide (${letter}).`;
+            return `Varde panaudota netinkama raide (${letter}).`;
         }
     }
     // 1 raide didzioji, kitos mazosios

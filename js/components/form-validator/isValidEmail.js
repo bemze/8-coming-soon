@@ -1,15 +1,22 @@
 function isValidEmail(email) {
+    
     if (typeof email !== 'string') {
-        return false;
+        return "Negali buti tuscias laukelis";
     }
+    // if (typeof email !== 'number') {
+    //     return "Negali buti tik skaiciai";
+    // }
     if (email === '') {
-        return false;
+        return "Negali buti tuscias laukelis";
     }
     if (email.length > 50) {
-        return false;
+        return "Negali buti daugiau nei 50 simboliu";
     }
     
+
     return true;
 }
 
-export { isValidEmail }
+  export { isValidEmail }
+
+
