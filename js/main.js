@@ -8,11 +8,19 @@ import { progressBarDate } from "./data/progressBarData.js";
 import { formValidator } from "./components/form-validator/formValidator.js";
 import { footerRender } from "./components/footer/footerRender.js";
 
+import { Toast } from './components/toast/Toast.js';
+
 renderAllProgressBars(progressBarDate);
 
 renderSocials('footer > .row', socials);
 
 renderClock('.clock');
+
+const toast = new Toast();
+toast.render();
+toast.show('error', 'Cia yra klaida!!!');
+toast.show('success', 'Puiku!!!');
+// toast.hide();
 
 
 formValidator('.hero .form');
